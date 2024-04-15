@@ -16,9 +16,8 @@ namespace Forma1.Model
         public string? Nemzet { get; set; }
         public int? Magasság { get; set; }
 
-        public Versenyző()
-        {
-        }
+        public Versenyző(){            
+        } // INSERT-hez
 
         public Versenyző(MySqlDataReader reader)
         {
@@ -27,7 +26,7 @@ namespace Forma1.Model
             CsapatID = (int)reader["csapatID"];
             Nemzet = reader["nemzet"] == DBNull.Value ? null : reader["nemzet"].ToString();
             Születés = Convert.ToDateTime(reader["születés"]);
-            Magasság = (int)reader["magasság"];
+            Magasság = reader["magasság"] == DBNull.Value ? null : (int)reader["magasság"];
         }
 
     }

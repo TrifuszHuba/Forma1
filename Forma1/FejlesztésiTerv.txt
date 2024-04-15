@@ -1,0 +1,14 @@
+﻿0. MySql szerver futtatása (XAMPP)
+1. Adatbázis importálása, próba lekérdezések
+2. MySql.Data Nuget csomag telepítése
+3. Modellek létrehozása (null értékek kezelése)
+4. SqlData helper osztály létrehozása (statikus fgv. CRUD)
+5. Fő ablak létrehozása
+6. A Combobox feltöltése a Csapatokkal
+7. A DataGrid feltöltése az összes versenyzővel az indulásnál
+8. A Keresés megvalósítása
+9. DeleteCommand létrehpzása és bekötése
+10. InsertCommand létrehozása, ami kitesz egy ablakot az új versenyző adatao felviteléhez
+11. A VersenyzőAdatok ablak elkészítése és adatkötések
+12. SaveCommand
+13. UpdateCommand, ami ugyanazt az ablakot nyitja, mint az Insert, de kitölti a kiválasztott versenyző adataival

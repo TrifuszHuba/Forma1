@@ -14,15 +14,16 @@ namespace Forma1.Model
         public string Főnök { get; set; }
         public string Nemzet { get; set; }
 
-        public Csapat() {
+        public Csapat() { 
+            Csapatnév = string.Empty;
         }
-
         public Csapat(MySqlDataReader reader)
         {
-            ID = reader.GetInt32("ID");
+            ID = (int)reader["ID"];
             Csapatnév = reader["csapatnév"].ToString();
             Főnök = reader["főnök"].ToString();
             Nemzet = reader["nemzet"].ToString();
+
         }
     }
 }
